@@ -20,8 +20,8 @@ public class ElectricStove : Appliance, ICooker
 
     public void Cook(string food)
     {
-        if (!IsOn) throw new Exception("o fogão não esta ligado");
-        WriteLine($"O {food} esta em andamento");
+        if (!IsOn) throw new Exception("the stove is not handled");
+        WriteLine($"your {food} is in progress");
     }
 
 
