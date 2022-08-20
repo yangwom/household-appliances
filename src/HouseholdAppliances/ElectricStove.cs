@@ -10,8 +10,8 @@ public class ElectricStove : Appliance, ICooker
 
 
     public ElectricStove(
-        string brand, string model, int maximumTemperature,
-        int boilingTime, bool Ison = false) : base(brand, model, Ison)
+        string brand, string model, int boilingTime, int maximumTemperature,
+         bool Ison = false) : base(brand, model, Ison)
     {
         MaximumTemperature = maximumTemperature;
         BoilingTime = boilingTime;
@@ -27,7 +27,16 @@ public class ElectricStove : Appliance, ICooker
 
     public void Bake(string food)
     {
-        if (!IsOn) throw new Exception("o forno não esta ligado");
+        if (!IsOn) throw new Exception("the oven is not on");
         WriteLine($"o {food} esta assando");
     }
+
+     public  bool SwitchPower()
+     {
+       var convert = !IsOn;
+       if(convert) return convert;
+       return IsOn;
+
+     
+     }
 }

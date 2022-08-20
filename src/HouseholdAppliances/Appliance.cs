@@ -6,6 +6,7 @@ public abstract class Appliance
     public string Model { get; set; }
     public bool IsOn { get; set; }
 
+    
     public Appliance(string brand, string model, bool Ison)
     {
         Brand = brand;

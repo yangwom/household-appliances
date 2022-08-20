@@ -13,6 +13,7 @@ public class Microwave: Appliance, ICooker
 
     }
 
+
     public void Cook(string food)
     {
       if(!IsOn) throw new ArgumentException("the microwave is off");
@@ -24,5 +25,14 @@ public class Microwave: Appliance, ICooker
       if(!IsOn) throw new ArgumentException("the microwave is off");
       WriteLine($"your {food} is being heated");
     }
+
+      public  bool SwitchPower()
+     {
+       var convert = !IsOn;
+       if(convert) return convert;
+       return IsOn;
+
+     
+     }
 
 }
