@@ -230,6 +230,3 @@ Em geral, como interfaces e classes abstratas não são entidades instanciáveis
   <br /><br />
 </details>
 
----
-
-Agora você já está apto utilizar o polimorfismo no seu dia a dia e a utilizar corretamente as classes abstratas e interfaces, escolhendo sempre a melhor opção de acordo com o contexto no qual estiver trabalhando! #VQV
